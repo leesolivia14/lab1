@@ -138,7 +138,7 @@ NOTES:
  *   Rating: 1
  */
 int bitXor(int x, int y) {
-  return ~(~x & ~y);
+  return ~(~(x & ~y) & ~(y & ~x));
 }
 /* 
  * tmin - return minimum two's complement integer 
